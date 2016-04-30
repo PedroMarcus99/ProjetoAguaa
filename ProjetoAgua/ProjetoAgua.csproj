@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8188F07C-6913-4296-94B0-105946B18D5A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjetoAgua</RootNamespace>
+    <AssemblyName>ProjetoAgua</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aguaaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>aguaaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Controller\AnaliseControl.cs" />
+    <Compile Include="Code\Controller\ArmazenarControl.cs" />
+    <Compile Include="Code\Controller\Classes\Balde.cs" />
+    <Compile Include="Code\Controller\Classes\Chuveiro.cs" />
+    <Compile Include="Code\Controller\Classes\Mangueira.cs" />
+    <Compile Include="Code\Controller\Classes\Maquina.cs" />
+    <Compile Include="Code\Controller\Classes\Segundos.cs" />
+    <Compile Include="Code\Controller\Classes\Torneira.cs" />
+    <Compile Include="Code\Controller\Classes\VasoSanitario.cs" />
+    <Compile Include="Code\Controller\ConsumoControl.cs" />
+    <Compile Include="Code\Controller\ConsumoDiarioControl.cs" />
+    <Compile Include="Code\Controller\DatasCtrl.cs" />
+    <Compile Include="Code\Controller\Collections\PessoaCollection.cs" />
+    <Compile Include="Code\Controller\PessoaControl.cs" />
+    <Compile Include="Code\DTO\DTOCasa.cs" />
+    <Compile Include="Code\DTO\DTOConsumo.cs" />
+    <Compile Include="Code\DTO\DTOConsumos.cs" />
+    <Compile Include="Code\DTO\DTODatas.cs" />
+    <Compile Include="Code\DTO\DTOHistorico.cs" />
+    <Compile Include="Code\DTO\DTOPessoa.cs" />
+    <Compile Include="Code\Model\ModelMySql.cs" />
+    <Compile Include="View\CRUD.cs" />
+    <Compile Include="View\FrmAnalise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmAnalise.Designer.cs">
+      <DependentUpon>FrmAnalise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmConsumoDiario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmConsumoDiario.Designer.cs">
+      <DependentUpon>FrmConsumoDiario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmFamiliaresView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmFamiliaresView.Designer.cs">
+      <DependentUpon>FrmFamiliaresView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmGreatTests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmGreatTests.Designer.cs">
+      <DependentUpon>FrmGreatTests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmStart.Designer.cs">
+      <DependentUpon>FrmStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmReduzConsumo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmReduzConsumo.Designer.cs">
+      <DependentUpon>FrmReduzConsumo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmMenuPrincipal.Designer.cs">
+      <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmNovoFamiliar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmNovoFamiliar.Designer.cs">
+      <DependentUpon>FrmNovoFamiliar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\FrmAnalise.resx">
+      <DependentUpon>FrmAnalise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmConsumoDiario.resx">
+      <DependentUpon>FrmConsumoDiario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmFamiliaresView.resx">
+      <DependentUpon>FrmFamiliaresView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmGreatTests.resx">
+      <DependentUpon>FrmGreatTests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmStart.resx">
+      <DependentUpon>FrmStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmReduzConsumo.resx">
+      <DependentUpon>FrmReduzConsumo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmMenuPrincipal.resx">
+      <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmNovoFamiliar.resx">
+      <DependentUpon>FrmNovoFamiliar.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="aguaaDataSet.xsc">
+      <DependentUpon>aguaaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="aguaaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>aguaaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="aguaaDataSet.xss">
+      <DependentUpon>aguaaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
