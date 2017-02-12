@@ -174,3 +174,6 @@ C:\Users\TEMP.LABEDUC.009\Desktop\ProjetoAgua\ProjetoAgua\obj\Debug\ProjetoAgua.
 C:\Users\TEMP.LABEDUC.009\Desktop\ProjetoAgua\ProjetoAgua\obj\Debug\ProjetoAgua.View.FrmMenuPrincipal.resources
 C:\Users\TEMP.LABEDUC.009\Desktop\ProjetoAgua\ProjetoAgua\obj\Debug\ProjetoAgua.View.FrmNovoFamiliar.resources
 C:\Users\TEMP.LABEDUC.009\Desktop\ProjetoAgua\ProjetoAgua\obj\Debug\ProjetoAgua.csproj.GenerateResource.Cache
+C:\Users\Renam Xavier\Source\Repos\ProjetoAguaa2\ProjetoAgua\bin\Debug\ProjetoAgua.exe.config
+C:\Users\Renam Xavier\Source\Repos\ProjetoAguaa2\ProjetoAgua\obj\Debug\ProjetoAgua.exe
+C:\Users\Renam Xavier\Source\Repos\ProjetoAguaa2\ProjetoAgua\obj\Debug\ProjetoAgua.pdb
